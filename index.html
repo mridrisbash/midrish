@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Midrish Technologies Nigeria — Sidra Chain Services</title>
+  <meta name="description" content="Midrish Technologies Nigeria — local Sidra Chain KYC & verification partner services, agent onboarding, and developer support." />
+  <meta name="keywords" content="Midrish, Sidra Chain, KYC agent, verification, blockchain services, Nigeria" />
+  <meta property="og:title" content="Midrish Technologies Nigeria — Sidra Chain Services" />
+  <meta property="og:description" content="Become a Sidra Chain KYC verification partner or request local verification services from Midrish Technologies Nigeria." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b6b3a" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1720; --card:#0b1720; --accent:#0b6b3a; --muted:#9aa6b2; --glass: rgba(255,255,255,0.04);
+      --max-width:1100px; --radius:14px;
+      --fade: 0.6s cubic-bezier(.2,.9,.3,1);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6f1ea;background:linear-gradient(180deg,#071018 0%, #071422 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--max-width);margin:0 auto;padding:32px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#064d2a);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(11,107,58,0.14);}
+    .logo svg{width:30px;height:30px;fill:#fff}
+    .brand h1{font-size:18px;margin:0;font-weight:700}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:rgba(255,255,255,0.9);text-decoration:none;font-weight:600;font-size:14px}
+    .cta{background:var(--accent);padding:10px 14px;border-radius:10px;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(8,95,52,0.18)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .hero .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 10px 30px rgba(2,6,10,0.6)}
+    .title{font-size:36px;margin:0 0 12px 0;line-height:1.02}
+    .lead{color:var(--muted);margin:0 0 20px 0}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:var(--glass);padding:10px 12px;border-radius:10px;font-weight:600;font-size:13px}
+
+    /* Right panel */
+    .panel{padding:22px;background:rgba(255,255,255,0.02);border-radius:12px}
+    .panel h3{margin-top:0}
+    .kpi{display:flex;gap:14px;align-items:center}
+    .kpi .num{font-size:20px;font-weight:800}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0}
+    .service{background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));padding:18px;border-radius:10px;transition:transform var(--fade), box-shadow var(--fade);}
+    .service:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(2,6,10,0.45)}
+    .service h4{margin:0 0 8px 0}
+    .service p{margin:0;color:var(--muted)}
+
+    /* Form */
+    form{display:grid;gap:12px}
+    label{font-size:13px;color:var(--muted)}
+    input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 12px;border-radius:10px;color:#e9f3ea}
+    input:focus,textarea:focus,select:focus{outline:none;border-color:rgba(11,107,58,0.9);box-shadow:0 6px 18px rgba(11,107,58,0.06)}
+    .btn{background:linear-gradient(90deg,var(--accent),#087a3f);padding:12px 14px;border-radius:10px;border:none;color:white;font-weight:700;cursor:pointer}
+
+    /* Footer */
+    footer{padding:28px 0;color:var(--muted);text-align:center}
+
+    /* Mobile */
+    .mobile-nav{display:none}
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr;}
+      .services{grid-template-columns:1fr 1fr}
+      nav{display:none}
+      .mobile-nav{display:flex;align-items:center;gap:12px}
+    }
+    @media (max-width:560px){
+      .services{grid-template-columns:1fr}
+    }
+
+    /* small animations */
+    .float{animation:float 6s ease-in-out infinite}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+    .reveal{opacity:0;transform:translateY(12px);animation:revealAnim 0.8s forwards;animation-delay:0.12s}
+    @keyframes revealAnim{to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3 7v10l9 5 9-5V7z"/></svg>
+        </div>
+        <div>
+          <h1>Midrish Technologies</h1>
+          <p>Sidra Chain KYC • Agent Onboarding • Local Support</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#agent">Become an Agent</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#apply">Apply Now</a>
+      </nav>
+
+      <div class="mobile-nav">
+        <button id="menuBtn" aria-label="Open menu" style="background:transparent;border:none;color:#fff;font-weight:700">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card reveal">
+          <h2 class="title">Local Sidra Chain KYC & Verification Services</h2>
+          <p class="lead">Midrish Technologies Nigeria helps onboard users into the Sidra ecosystem — agent services, trusted verification, and developer integration support.</p>
+          <div class="features">
+            <div class="feature">In‑person KYC</div>
+            <div class="feature">Agent Onboarding</div>
+            <div class="feature">Developer Support</div>
+            <div class="feature">Secure Document Handling</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn" href="#agent">Apply as Agent</a>
+            <a class="btn" href="#contact" style="background:transparent;border:1px solid rgba(255,255,255,0.06)">Request Verification</a>
+          </div>
+        </div>
+
+        <aside class="panel float reveal" aria-hidden>
+          <h3>Why Midrish?</h3>
+          <p class="small">We combine local presence with secure processes so Sidra users can verify easily without long travel or risk.</p>
+
+          <div style="margin-top:18px">
+            <div class="kpi"><div class="num">24</div><div class="small">Local Partners</div></div>
+            <div style="height:12px"></div>
+            <div class="kpi"><div class="num">4,200+</div><div class="small">Verified Users</div></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services">
+        <h3 style="color:#dcefe0;margin-bottom:18px">Our Services</h3>
+        <div class="services">
+          <div class="service reveal">
+            <h4>In‑Person KYC</h4>
+            <p>Secure document verification at certified local centers — fast, safe, and compliant with Sidra requirements.</p>
+          </div>
+          <div class="service reveal">
+            <h4>Agent Onboarding</h4>
+            <p>Register your company as a Sidra Club and become an authorized KYC verification center.</p>
+          </div>
+          <div class="service reveal">
+            <h4>Developer Integration</h4>
+            <p>RPC configuration, wallet integration, and smart contract deployment support for Sidra-based apps.</p>
+          </div>
+          <div class="service reveal">
+            <h4>Document Security</h4>
+            <p>Encrypted upload handling, temporary storage, and secure deletion protocols for client data.</p>
+          </div>
+          <div class="service reveal">
+            <h4>Training & Support</h4>
+            <p>Train your staff to run KYC events and maintain compliance with Sidra’s standards.</p>
+          </div>
+          <div class="service reveal">
+            <h4>Consulting</h4>
+            <p>Advisory to help businesses become Sidra Clubs and run successful verification centers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="agent" style="margin-top:30px">
+        <div class="card">
+          <h3>Apply to Become a Sidra KYC Agent</h3>
+          <p class="small">Fill this short form — we’ll review your application and reach out with next steps to become a certified Sidra Club.</p>
+          <form id="agentForm" onsubmit="submitAgent(event)">
+            <label>Company Name
+              <input type="text" name="company" required placeholder="Your company name" />
+            </label>
+            <label>Company Registration Number
+              <input type="text" name="regno" required placeholder="RC / CAC number" />
+            </label>
+            <label>Contact Person
+              <input type="text" name="contact" required placeholder="Full name" />
+            </label>
+            <label>Phone / WhatsApp
+              <input type="tel" name="phone" required placeholder="+234..." />
+            </label>
+            <label>Location (City, State)
+              <input type="text" name="location" required placeholder="Katsina, Nigeria" />
+            </label>
+            <label>Upload Documents (Business reg., ID)
+              <input type="file" name="docs" accept=".pdf,.jpg,.png" multiple />
+            </label>
+            <label>Short Message / Notes
+              <textarea name="notes" rows="3" placeholder="Tell us about your capacity and experience"></textarea>
+            </label>
+            <div style="display:flex;gap:12px">
+              <button class="btn" id="apply">Submit Application</button>
+              <button type="reset" class="btn" style="background:transparent;border:1px solid rgba(255,255,255,0.06)">Reset</button>
+            </div>
+            <p id="formMsg" class="small" style="margin-top:8px"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:28px">
+        <div class="card">
+          <h3>Request a Verification</h3>
+          <p class="small">Need to verify a user? Send us the details and we’ll schedule a local verification appointment.</p>
+          <form onsubmit="submitContact(event)">
+            <label>Your Name
+              <input type="text" name="name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" required />
+            </label>
+            <label>Phone
+              <input type="tel" name="phone" required />
+            </label>
+            <label>City
+              <input type="text" name="city" required />
+            </label>
+            <label>Message
+              <textarea name="message" rows="3"></textarea>
+            </label>
+            <div style="display:flex;gap:12px">
+              <button class="btn">Send Request</button>
+            </div>
+            <p id="contactMsg" class="small" style="margin-top:8px"></p>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Midrish Technologies Nigeria — Trusted Sidra Chain local partner.</p>
+      <p class="small">Address: Katsina, Nigeria • Email: info@midrishtech.ng • Phone: +234 000 000 0000</p>
+    </footer>
+  </div>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu (very simple)
+    const menuBtn = document.getElementById('menuBtn');
+    if(menuBtn){
+      menuBtn.addEventListener('click',()=>{
+        alert('Navigation available in desktop view. Use links to jump to sections.');
+      })
+    }
+
+    // Mock form submission (since no backend is provided)
+    function submitAgent(e){
+      e.preventDefault();
+      const msg = document.getElementById('formMsg');
+      msg.textContent = 'Thanks — your application has been queued. We will contact you within 2–5 business days.';
+      msg.style.color = '#a7f0c6';
+      e.target.reset();
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    function submitContact(e){
+      e.preventDefault();
+      const msg = document.getElementById('contactMsg');
+      msg.textContent = 'Request received. We will reach out to schedule verification.';
+      msg.style.color = '#a7f0c6';
+      e.target.reset();
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    // Stagger reveal animations
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach((el,i)=>{el.style.animationDelay = (i*0.08)+'s'})
+  </script>
+</body>
+</html>
